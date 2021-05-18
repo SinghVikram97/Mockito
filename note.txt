@@ -1,1 +1,25 @@
-Need for Mockito:
+We want to test the function retrieveTodosRelatedToSpring
+
+Terminologies:
+1. SUT (System Under Test) would be class TodoBusinessImpl
+2. TodoService is the dependency
+
+How to test this without actual implementation of TodoService (ie. actual data)
+
+STUB:
+1. Sample/Fake implementation of external dependency with preprogrammed return values
+2. A typical stub is a database connection that allows you to mimic any scenario without having a real database.
+
+Setups:
+1. Create TodoServiceStub
+2. Test TodoBusinessImpl using TodoServiceStub
+3. Create TodoService instance using TodoServiceStub
+
+Problems with Stub:
+1. How to create different scenarios when using a Stub? ie. Dynamic Conditions
+   for ex. Receive no values (nothing returned from TodoService), Or single value etc Or return depending on user
+   Adding all this to the Stub class will make it grow fast and it will have complex logic in it which will be hard to maintain
+
+2. We need to implement all the methods mentioned in the Original interface ie. TodoService otherwise TodoServiceStub wouldn't compile
+
+So overall we have a lot of maintenance overhead
