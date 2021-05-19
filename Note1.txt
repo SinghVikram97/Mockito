@@ -35,3 +35,8 @@ You can verify method calls and a lot of other things
 2. Mockito mocks return default values when they are not stubbed
 3. We have specify than when this function called with this argument return this
 4. ex. when(todoServiceMock.retrieveTodos("Dummy")).thenReturn(List.of("Learn Spring MVC","Learn Spring","Learn to Dance"));
+5. Can test different scenarios without much setup as we can modify the return value
+
+Argument matchers:
+1. anyInt() etc.
+2. Throw exception-> thenThrow()
