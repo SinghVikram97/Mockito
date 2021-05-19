@@ -91,3 +91,9 @@ Capture Arguments passed to a mock:
 
 Hamcrest Matchers:
 Add dependency, hamcrest core only contains basic stuff
+
+Mockito Annotations:
+1. @Mock
+2. @InjectMocks
+3. @RunWith(MockitoJUnitRunner.class)
+4. @Captor
