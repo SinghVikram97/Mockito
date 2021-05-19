@@ -84,3 +84,7 @@ Check how many times method called times(2), check if called 2 times
 atleastOnce() also present and other methods also present
 
 Capture Arguments passed to a mock:
+1. Declare argument captor for
+2. Define argument captor on specific method call
+3. Capture the argument
+4. getAllValues() to check for multiple arguments
