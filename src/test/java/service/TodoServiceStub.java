@@ -9,4 +9,8 @@ public class TodoServiceStub implements TodoService{
         return List.of("Learn Spring MVC","Learn Spring","Learn to Dance");
     }
 
+    @Override
+    public void deleteTodo(String todo) {
+
+    }
 }

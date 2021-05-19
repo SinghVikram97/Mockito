@@ -9,4 +9,6 @@ public interface TodoService {
 
     // Retrieves Todos for a particular user
     public List<String> retrieveTodos(String user);
+
+    public void deleteTodo(String todo);
 }

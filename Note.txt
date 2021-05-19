@@ -70,3 +70,16 @@ BDD (Behaviour Driven Development)
    given().willReturn()
    assertThat( actualValue , is(expectedValue) )
 
+
+Verify Calls on Mock:
+Check if a method is called or not, also how many times a method was called
+
+given(listMock.get()).willReturn() , check whether listMock.get() called or not
+
+verify(todoServiceMock).deleteTodo("Learn to Dance")-> verify that deleteTodo method called only with argument "Learn to Dance"
+
+To check if method not called with given argument add never()
+Check how many times method called times(2), check if called 2 times
+atleastOnce() also present and other methods also present
+
+
