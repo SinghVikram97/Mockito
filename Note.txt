@@ -88,3 +88,6 @@ Capture Arguments passed to a mock:
 2. Define argument captor on specific method call
 3. Capture the argument
 4. getAllValues() to check for multiple arguments
+
+Hamcrest Matchers:
+Add dependency, hamcrest core only contains basic stuff
