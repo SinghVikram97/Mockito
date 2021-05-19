@@ -23,3 +23,15 @@ Problems with Stub:
 2. We need to implement all the methods mentioned in the Original interface ie. TodoService otherwise TodoServiceStub wouldn't compile
 
 So overall we have a lot of maintenance overhead
+
+MOCK:
+What is mocking?
+Mocking is creating objects that simulate behaviour of real objects
+Unlike stubs, mocks can be dynamically created from code - at runtime
+Mocks offer more functionality than stubbing
+You can verify method calls and a lot of other things
+
+1. mock(ClassName.class)
+2. Mockito mocks return default values when they are not stubbed
+3. We have specify than when this function called with this argument return this
+4. ex. when(todoServiceMock.retrieveTodos("Dummy")).thenReturn(List.of("Learn Spring MVC","Learn Spring","Learn to Dance"));
