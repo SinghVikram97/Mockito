@@ -72,6 +72,7 @@ BDD (Behaviour Driven Development)
 
 
 Verify Calls on Mock:
+
 Check if a method is called or not, also how many times a method was called
 
 given(listMock.get()).willReturn() , check whether listMock.get() called or not
@@ -82,4 +83,4 @@ To check if method not called with given argument add never()
 Check how many times method called times(2), check if called 2 times
 atleastOnce() also present and other methods also present
 
-
+Capture Arguments passed to a mock:

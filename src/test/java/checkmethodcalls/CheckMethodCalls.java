@@ -10,6 +10,7 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertThat;
 import static org.mockito.BDDMockito.given;
+import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.*;
 
 public class CheckMethodCalls {
@@ -38,6 +39,9 @@ public class CheckMethodCalls {
         /*verify(todoServiceMock).deleteTodo("Learn Spring");*/ // Fails
 
         verify(todoServiceMock,never()).deleteTodo("Learn Spring MVC");
-        verify(todoServiceMock,never()).deleteTodo("Learn Spring");
+        /*verify(todoServiceMock,never()).deleteTodo("Learn Spring");*/
+
+        // BDD Approach
+        then(todoServiceMock).should(never()).deleteTodo("Learn Spring");
     }
 }
