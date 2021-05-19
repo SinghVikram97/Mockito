@@ -67,7 +67,5 @@ public class ListTest {
 
         listMock.get(0);
 
-
     }
-
 }

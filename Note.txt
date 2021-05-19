@@ -40,3 +40,33 @@ You can verify method calls and a lot of other things
 Argument matchers:
 1. anyInt() etc.
 2. Throw exception-> thenThrow()
+
+BDD (Behaviour Driven Development)
+1. Write tests using
+   Given
+   When
+   Then
+
+2. ex
+   Story: Product Returns go to Stock
+
+   In order to keep track of stock, as a store owner I want to add items back to stock when they're returned.
+
+   Scenario 1:
+   Given that a customer previously bought a black sweater from me
+   When he returns the black sweater for a refund
+   Then I should have one more black sweater in stock
+
+   Scenario 2:
+   Given that a customer previously bought a blue garment from me
+   When he returns blue garment for a replacement in black
+   Then we would have one more blue garment and one less black garment in stock
+
+3. Given - setup
+   When - actual method call
+   Then - asserts
+
+4. BDD Mockito class
+   given().willReturn()
+   assertThat( actualValue , is(expectedValue) )
+
