@@ -7,6 +7,7 @@ import org.mockito.Mock;
 import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
+import org.powermock.reflect.Whitebox;
 import staticcode.Dependency;
 import staticcode.SystemUnderTest;
 import staticcode.UtilityClass;
@@ -52,6 +53,21 @@ public class PowerMock {
         //UtilityClass.staticMethod(5);
         // Fail as it was expecting 6 as systemUnderTest would call staticMethod with value 6 (1+2+3 in stats List)
         UtilityClass.staticMethod(6);
+    }
+
+    @Test
+    public void testPrivateMethod() throws Exception {
+
+        List<Integer> stats=List.of(1,2,3);
+
+        when(dependencyMock.retrieveAllStats()).thenReturn(stats);
+
+        /*int result=systemUnderTest.privateMethodUnderTest();*/ // Private method can't call it like this
+
+        long result=Whitebox.invokeMethod(systemUnderTest,"privateMethodUnderTest");
+
+        assertEquals(6,result);
+
     }
 
 }

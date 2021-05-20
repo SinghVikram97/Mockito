@@ -119,3 +119,5 @@ Use Powermock and Mockito to mock a static method
 1. We have to use a specific runner and @PrepareForTest(StaticMethodClass)
 2. Initialize class containing static method
 3. Mock the method
+
+Illegal reflective access due to https://github.com/powermock/powermock/issues/969
