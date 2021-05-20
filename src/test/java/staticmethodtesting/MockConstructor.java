@@ -38,8 +38,6 @@ public class MockConstructor {
         int size = systemUnderTest.methodUsingAnArrayListConstructor();
 
         Assert.assertEquals(5,size); // Line 33 we specified size 5
-
-
     }
 
 }

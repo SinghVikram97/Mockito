@@ -125,3 +125,12 @@ Illegal reflective access due to https://github.com/powermock/powermock/issues/9
 We can mock static methods
 Invoke Private Methods
 Mock Constructors (Ie. some method may be invoking a constructor)
+
+Good Unit Tests->
+https://github.com/in28minutes/MockitoTutorialForBeginners/blob/master/Step18.md
+
+Fails only when there are real logic failures
+
+Naming methods-> whichMethod_whatScenario_whatResult
+
+When a test fails only reason for it should be logic problem not external factors like db connections etc.
