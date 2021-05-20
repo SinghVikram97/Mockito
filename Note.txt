@@ -121,3 +121,7 @@ Use Powermock and Mockito to mock a static method
 3. Mock the method
 
 Illegal reflective access due to https://github.com/powermock/powermock/issues/969
+
+We can mock static methods
+Invoke Private Methods
+Mock Constructors (Ie. some method may be invoking a constructor)

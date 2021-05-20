@@ -12,7 +12,6 @@ import staticcode.Dependency;
 import staticcode.SystemUnderTest;
 import staticcode.UtilityClass;
 
-import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -69,5 +68,4 @@ public class PowerMock {
         assertEquals(6,result);
 
     }
-
 }
