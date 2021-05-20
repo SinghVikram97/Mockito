@@ -101,3 +101,21 @@ Mockito Annotations:
 Mockito JUnit Rules:
 1. One JUnit class can have only one Runner, So only one @RunWith
 2. So to bypass/achieve more than one Runner we have Rules
+
+Unit test with Spring:
+https://github.com/in28minutes/MockitoTutorialForBeginners/blob/master/Step18.md
+
+Mockito Spy:
+A Spy gets all logic from the class whereas mock doesn't care about any logic
+Partial mock
+*You let the real action happen and you listen/check for behaviours
+
+*Mockito doesn't allow stubbing final and private methods and static methods
+WE are supposed to test public functionalities with Unit tests
+So Mockito promotes good design by not allowing this
+
+Powermock with Mockito:
+Use Powermock and Mockito to mock a static method
+1. We have to use a specific runner and @PrepareForTest(StaticMethodClass)
+2. Initialize class containing static method
+3. Mock the method
